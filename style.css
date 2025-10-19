@@ -1,0 +1,161 @@
+/* Inicio */
+body {
+    margin: 2%;
+    background-color: #DEE4B8;
+}
+
+.bam {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 4%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 350px;
+
+}
+
+.color {
+    background-color: #9C9F82;
+    border-radius: 40px;
+
+    width: 95%;
+    height: 300px;
+}
+
+/* Fuentes de letras */
+h1 {
+    font-size: 70px;
+    color: #ffffff;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h2 {
+    font-size: 40px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: #5C4E4E;
+}
+p {
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+.titulos {
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-style: semi-bold;
+    font-weight: 600;
+}
+.txt {
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+}
+
+
+.services {
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+.contenedoresi {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.recuadros {
+    margin: 50px;
+    width: 400px;
+    height: 250px;
+    background-color: #A7B375 ;
+    border-radius: 30px;
+
+    text-align: center;
+}
+
+
+
+/* button */
+.toggle {
+    background-color: #fff;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.1);
+    line-height: 1;
+    transform: translate(1090px, -150px);
+}
+
+.input {
+    display: none;
+}
+
+.icon {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    transition: transform 500ms;
+    line-height: 0.1;
+}
+
+.icon--moon {
+    transition-delay: 200ms;
+}
+
+.icon--sun {
+    transform: scale(0);
+}
+
+#switch:checked+.icon--moon {
+    transform: rotate(360deg) scale(0);
+}
+
+#switch:checked~.icon--sun {
+    transition-delay: 200ms;
+    transform: scale(1) rotate(360deg);
+}
+form {
+    background-color: #FFFAD4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    width: 50%;
+    height: 40%;
+}
+label {
+    font-size: 25px;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+}
+
+input {
+    border-radius: 30px ;
+    border: 1px solid;
+    background-color: #DEE4B8;
+    font-family: "Inter", sans-serif;
+    height: 40px;
+    width: 400px;
+}
+button {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    background-color: #ECAC2E;
+    border-radius: 20px;
+    margin: 20px;
+    border: none;
+    width: 150px;
+    height: 30px;
+}
